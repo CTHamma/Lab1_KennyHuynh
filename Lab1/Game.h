@@ -9,6 +9,10 @@ private:
 		m_developer;
 	int m_NumberOfAcheivements;
 public:
+	Achievement* achievementPtr;
+	bool hasAchievements = false;
+	int numAchievements;
+
 	// Constructors
 	Game() // Default constructor
 	{
@@ -24,17 +28,39 @@ public:
 	}
 
 	// Inline functions
+	void setGame(string gName)
+	{
+		m_gName = gName;
+	}
 	string getGame()
 	{
 		return m_gName;
+	}
+
+	void setPublisher(string publisher)
+	{
+		m_publisher = publisher;
 	}
 	string getPublisher()
 	{
 		return m_publisher;
 	}
+
+	void setDeveloper(string developer)
+	{
+		m_developer = developer;
+	}
 	string getDeveloper()
 	{
 		return m_developer;
 	}
-	void getNumberA(int numberAchievements[]);
+
+	void setNumberA(int numberAchievements)
+	{
+		m_NumberOfAcheivements = numberAchievements;
+	}
+	int getNumberA()
+	{
+		return m_NumberOfAcheivements;
+	}
 };

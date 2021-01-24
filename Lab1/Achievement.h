@@ -23,13 +23,27 @@ public:
 	}
 
 	// Inline functions
+	void setTitle(string award)
+	{
+		m_title = award;
+	}
 	string getTitle()
 	{
 		return m_title;
 	}
+
+	void setDescription(string detail)
+	{
+		m_description = detail;
+	}
 	string getDescription()
 	{
 		return m_description;
+	}
+
+	void setScore(int points)
+	{
+		m_score = points;
 	}
 	int getScore()
 	{
